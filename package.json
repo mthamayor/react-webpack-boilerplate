@@ -1,6 +1,10 @@
 {
   "name": "andela-build-week",
   "version": "1.0.0",
+  "engines": { 
+    "node": "12.7.0",
+    "npm": "6.10.3"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {

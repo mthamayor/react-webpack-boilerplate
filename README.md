@@ -1,1 +1,1 @@
-# Andela build week
+# Webpack react boilerplate

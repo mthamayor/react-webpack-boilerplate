@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap');
 
-.html, body{
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.html, body, #root, #root{
   width: 100%;
   height: 100%;
 }
@@ -14,5 +25,17 @@ body {
 }
 #root {
   width: 100%;
-  height: 100%;
+  height: 100vh;
+}
+
+.action-button{
+  height: 40px;
+  min-width:90px;
+  padding: 0px 10px ;
+  text-transform: capitalize;
+  letter-spacing: 0.2em;
+  background-color: #0057FF;
+  border-radius: 4px;
+  font-size: 14px;
+  color: white;
 }

@@ -21,8 +21,14 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader']
-      }
+        use: ['style-loader', 'css-loader', 'postcss-loader']
+      },
+      {
+         test: /\.(png|svg|jpg|gif)$/,
+         use: [
+           'file-loader',
+        ],
+      },
     ]
   },
 
@@ -31,7 +37,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './public/index.html',
       filename: './index.html'
-    })
+    }),
+    require('tailwindcss'),
+    require('autoprefixer')
   ],
   devtool: 'cheap-module-source-map'
 };
